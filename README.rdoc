@@ -1,28 +1,21 @@
-== README
+Link to App on Heroku: TBD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project: Learn Japanese vocabulary through Anime
 
-Things you may want to cover:
+Description: Create a Language Learning Web application that increases a users vocab through the use of anime. Users can choose from a list of anime to study from. Each anime has a set of Japanese to English flashcards containing phrases from the anime. Users will then select whether they got the phrase correct or not. Once a level of understanding has been reached, users will be able to then watch the anime.
 
-* Ruby version
+The project aims to: a. increase ones vocabulary of Japanese b. cement learning by being able to understand the episode of anime. c. motivate learning through reward (passing flashcards test = get to watch anime)
 
-* System dependencies
+Phases of Construction:
 
-* Configuration
+Implement Flash Card System and Google Translate API
+Implement adding users.
+Implement Styling
+Perma Link to Image Mock Up:
 
-* Database creation
+https://kennmillerinc.mybalsamiq.com/mockups/2388811.png?key=ae9d6e8ffcbc52c18503afe68a0b7c13a88c7a05
 
-* Database initialization
+ERD Outline:
 
-* How to run the test suite
+https://www.draw.io/#LLearn%20Japanese%20through%20Anime%20
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
