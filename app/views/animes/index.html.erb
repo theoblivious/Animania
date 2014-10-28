@@ -3,21 +3,29 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
+    <% if @animes.empty? %>
+    <td class="no anime"> "No Anime" </td>
+    <%else%>
     <% @animes.each do |anime| %>
+
       <tr>
-        <td><%= link_to 'Show', anime %></td>
+        <td class="anime_name"><%= anime.name %></td>
+        <!-- <td><%= link_to 'Show', anime %></td> -->
         <td><%= link_to 'Edit', edit_anime_path(anime) %></td>
         <td><%= link_to 'Destroy', anime, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    <% end %>
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Anime', new_anime_path %>
+<%= link_to 'New Anime', new_anime_path %><br>
+<%= link_to 'Back To Home Page', root_path %>
