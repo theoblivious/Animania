@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :quizzes
+
+  resources :quiz_stages
+
   resources :questions
 
   resources :animes
