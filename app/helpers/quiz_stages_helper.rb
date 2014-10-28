@@ -1,0 +1,2 @@
+module QuizStagesHelper
+end
