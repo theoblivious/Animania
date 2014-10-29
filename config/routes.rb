@@ -4,9 +4,11 @@ Rails.application.routes.draw do
 
   resources :quiz_stages
 
-  resources :questions
 
-  resources :animes
+
+  resources :animes do
+      resources :questions
+  end
 
   resources :anime_libraries
 
