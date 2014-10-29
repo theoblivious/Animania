@@ -40,6 +40,6 @@ class QuestionsController < ApplicationController
     end
 
     def question_params
-      params.require(:question).permit(:english, :japanese, :anime_id, :integer)
+      params.require(:question).permit(:english, :japanese, :anime_id) #:integer
     end
 end

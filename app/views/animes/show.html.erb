@@ -1,9 +1,28 @@
 <p id="notice"><%= notice %></p>
+ <h2><%= @anime.name %> </h2>
+<table>
+<thead>
+    <tr>
+      <th>Question</th>
+      <th>English</th>
+      <th>Japanese</th>
+      <th colspan="25"></th>
+    </tr>
+</thead>
 
-<p>
-  <strong>Name:</strong>
-  <%= @anime.name %>
-</p>
 
+<tbody>
+  <!-- List of questions for each anime and displayed on anime show page  -->
+  <strong></strong>
+
+  <% @anime.questions.each do |question| %>
+        <tr>
+          <td><%= question.id %></td>
+          <td><%= question.english %></td>
+          <td><%= question.japanese %></td>
+        </tr>
+  <% end %>
+</tbody>
+</table>
 <%= link_to 'Edit', edit_anime_path(@anime) %> |
 <%= link_to 'Back', animes_path %>

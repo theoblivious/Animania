@@ -3,6 +3,7 @@ class AnimesController < ApplicationController
 
   def index
     @animes = Anime.all
+
     # respond_with(@animes)
   end
 
