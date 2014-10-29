@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
 
   resources :animes do
-      resources :questions
+      resources :questions  #this creates a resource for animes/questions path
   end
 
   resources :anime_libraries
