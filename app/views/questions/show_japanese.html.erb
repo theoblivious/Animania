@@ -1,1 +1,4 @@
-<h1> Hi! </h1>
+<% @anime.questions.shuffle.each do |question| %>
+  <%= question.japanese %>
+<% end %>
+<%= link_to 'Show English',anime_question_path(@anime, @anime.questions.sample,lang: 'english') %>
