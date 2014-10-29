@@ -26,4 +26,4 @@
 </table>
 <%= link_to 'Edit', edit_anime_path(@anime) %> |
 <%= link_to 'Back', animes_path %>
-<%= link_to 'Generate Quiz ',anime_question_path(@anime, @anime.questions.sample, lang: 'japanese') %>
+<%= link_to 'Generate Quiz ',anime_question_path(@anime, Anime.first.questions.sample, lang: 'japanese') %>

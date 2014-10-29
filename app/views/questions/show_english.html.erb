@@ -1,4 +1,3 @@
-<% @anime.questions.each do |question| %>
-  <%= question.english %>
-<% end %>
+<%=@anime.questions.all.first.english %>
+
 <%= link_to 'Back to List',@anime%>
