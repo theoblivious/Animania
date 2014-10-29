@@ -7,6 +7,17 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    case params[:lang]
+    when "japanese"
+      render "show_japanese"
+    when "english"
+      render "show_english"
+    else
+      puts "error unsupported language"
+    end
+
+
+
     # respond_with(@question)
   end
 
@@ -35,11 +46,11 @@ class QuestionsController < ApplicationController
   end
 
   private
-    def set_question
-      @question = Question.find(params[:id])
-    end
+  def set_question
+    @question = Question.find(params[:id])
+  end
 
-    def question_params
-      params.require(:question).permit(:english, :japanese, :anime_id) #:integer
-    end
+  def question_params
+    params.require(:question).permit(:english, :japanese, :anime_id) #:integer
+  end
 end
