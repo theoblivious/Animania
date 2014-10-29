@@ -12,6 +12,12 @@ Questions_anime1 =Question.create([
   {japanese:"Korosu", english: "kill", anime_id: 1}
 
 
+  ])
+
+Questions_anime_2 =Question.create([
+{japanese:"Chimatsuri", english: "blood bath", anime_id: 2},
+{japanese:"Genki Desuka?", english: "Are you well?", anime_id: 2}
+
 
 
   ])

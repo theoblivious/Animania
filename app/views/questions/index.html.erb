@@ -6,7 +6,7 @@
       <th>English</th>
       <th>Japanese</th>
       <th>Anime</th>
-      <th>Integer</th>
+      <!-- <th>Integer</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,8 +17,8 @@
         <td><%= question.english %></td>
         <td><%= question.japanese %></td>
         <td><%= question.anime_id %></td>
-        <td><%= question.integer %></td>
-        <td><%= link_to 'Show', question %></td>
+       <!-- there is an integer that goes here -->
+        <td><%= link_to 'Show ', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
