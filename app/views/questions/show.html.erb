@@ -15,10 +15,7 @@
   <%= @question.anime_id %>
 </p>
 
-<p>
-  <strong>Integer:</strong>
-  <%= @question.integer %>
-</p>
+<!-- had integer in here  -->
 
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
+<%= link_to 'Show English',anime_question_path(Anime.first, @anime.questions.sample,lang: 'english') %>
+<%= link_to 'Back', animes_path %>

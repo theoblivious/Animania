@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+group :test do
+     gem 'capybara'
+     gem 'rspec-rails'
+    end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
@@ -39,3 +42,5 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'debugger', group: [:development, :test]
 
 gem 'devise'
+
+gem 'bootstrap-sass'
