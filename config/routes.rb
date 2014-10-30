@@ -1,18 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :quizzes
-
-  resources :quiz_stages
-
-
-
   resources :animes do
-      resources :questions  #this creates a resource for animes/questions path
+    resources :questions, shallow: true #this creates a resource for animes/questions path
   end
 
-  resources :anime_libraries
+  get 'quiz/japanese', to: 'quiz#japanese' # show a quiz
+  get 'quiz/english', to: 'quiz#english' # answer the quiz
 
   devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

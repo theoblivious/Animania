@@ -7,16 +7,20 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @question=Question.find(params[:id])
-    @anime= Anime.find(params[:anime_id])  # need to specify the @ instance so that it can be recognized in my views
-    case params[:lang]
-    when "japanese"
-      render "show_japanese"
-    when "english"
-      render "show_english"
-    else
-      puts "error unsupported language"
-    end
+
+    @question = Question.find(params[:id])
+    @anime = Anime.find(params[:anime_id])  # need to specify the @ instance so that it can be recognized in my views
+
+
+
+    # case params[:lang]
+    # when "japanese"
+    #   render "show_japanese"
+    # when "english"
+    #   render "show_english"
+    # else
+    #   puts "error unsupported language"
+    # end
 
 
 
