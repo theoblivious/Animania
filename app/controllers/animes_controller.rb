@@ -8,6 +8,7 @@ class AnimesController < ApplicationController
   end
 
   def show
+    @question = @anime.questions.sample
     # respond_with(@anime)
   end
 

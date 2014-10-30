@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Japanese:</strong>
+  <%= @japanese %>
+</p>
+
+<%= link_to 'Show English', quiz_english_path({ id: @question.id }) %>
+<%= link_to 'Back', animes_path %>
