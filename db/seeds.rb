@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
 
 animes = Anime.create([{name: 'FLCL Episode 1'}, {name: 'FLCL Episode 2'}])
 Questions_anime1 =Question.create([
@@ -20,7 +21,11 @@ Questions_anime_2 =Question.create([
 
 
 
-  ])
+])
+
+
+
+
 
 
 # t.string   "email",                  default: "", null: false
