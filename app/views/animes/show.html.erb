@@ -6,7 +6,7 @@
       <th>Question</th>
       <th>English</th>
       <th>Japanese</th>
-      <th colspan="25"></th>
+      <th colspan="3"></th>
     </tr>
 </thead>
 
@@ -24,7 +24,13 @@
   <% end %>
 </tbody>
 </table>
-<%= link_to 'Edit', edit_anime_path(@anime) %> |
+<!--
+<%= link_to 'Edit', edit_anime_path(@anime) %>
+ -->
+<div class="secondary small button">
 <%= link_to 'Back', animes_path %>
+</div>
+<div class="secondary large button ">
 <%= link_to 'Generate Quiz', quiz_japanese_path({id: @question.id}) %>
+</div>
 <!-- This is how we tell Rails that we want to pass this piece of information from the Animes controller to the quiz controller. -->

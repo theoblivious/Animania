@@ -34,6 +34,10 @@ animes = Anime.create([{name: 'FLCL Episode 1'}, {name: 'FLCL Episode 2'}])
 # ])
 
 
+
+
+
+
 # t.string   "email",                  default: "", null: false
 #     t.string   "encrypted_password",     default: "", null: false
 #     t.string   "reset_password_token"
