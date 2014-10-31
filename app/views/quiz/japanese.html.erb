@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Japanese:</strong>
-  <%= @japanese %>
-</p>
+<div class="container">
+<div class="row">
+  <div class="3 large-centered columns"></div>
+  <h3 class="text-center"><%= @japanese %></h3>
 
-<%= link_to 'Show English', quiz_english_path({ id: @question.id }) %>
-<%= link_to 'Back', animes_path %>
+  </div>
+</div>
+
+
+<p class ="text-center"><%= link_to 'Show English', quiz_english_path({ id: @question.id }) %>
+</br>
+<%= link_to 'Back', animes_path %></p>
