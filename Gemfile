@@ -46,7 +46,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'rails_12factor', '~> 0.0.3'
 gem 'devise'
 
 gem 'foundation-rails'
