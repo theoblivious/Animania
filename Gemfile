@@ -50,3 +50,4 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 
 gem 'foundation-rails'
+gem 'rails_12factor', group: :production
