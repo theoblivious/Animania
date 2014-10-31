@@ -7,14 +7,59 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class=" 2 rows">
+  <div class="large-12 columns">
 
 
-  <% if current_user %>
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+
+          <li class="name">
+            <h1>
+              <a href="#">
+                <%=link_to "Animania: Learn Japanese Through the Power of Anime", root_path %>
+              </a>
+            </h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <ul class="right">
+        <% if current_user %>
+            <li><a href="#"> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a></li>
+          <% else %>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+    <li><%= link_to "Sign In", new_user_session_path %></li>
+          <% end %>
+           <!--  <li><a href="#">Link 2</a></li> -->
+          </ul>
+
+          <!-- <ul class="right">
+            <li class="search">
+              <form>
+                <input type="search">
+              </form>
+            </li>
+
+            <li class="has-button">
+              <a class="small button" href="#">Search</a>
+            </li>
+          </ul> -->
+        </section>
+      </nav>
+
+
+
+    </div>
+  </div>
+
+ <!--  <% if current_user %>
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
   <% else %>
    <%= link_to "Sign Up", new_user_registration_path %>
     <%= link_to "Sign In", new_user_session_path %>
-  <% end %>
+  <% end %> -->
 
 
   <!-- replace me with nice iterator that takes care of multiple types of flashes -->
@@ -24,6 +69,16 @@
   <!-- replace me -->
 
   <%= yield %>
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright Kenn Miller Productions</p>
+        </div>
+    </div>
+  </footer>
 
 </body>
 </html>

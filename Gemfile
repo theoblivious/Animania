@@ -8,6 +8,7 @@ group :test do
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
+  gem 'pry-rails'
   gem 'sqlite3'
 end
 group :production do

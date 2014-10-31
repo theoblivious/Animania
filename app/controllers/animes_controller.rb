@@ -1,3 +1,4 @@
+require 'pry'
 class AnimesController < ApplicationController
   before_action :set_anime, only: [:show, :edit, :update, :destroy]
 
