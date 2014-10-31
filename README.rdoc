@@ -1,4 +1,4 @@
-Link to App on Heroku: murmuring-basin-5968.herokuapp.com
+Link to App on Heroku: https://calm-stream-6264.herokuapp.com/
 
 Project: Learn Japanese vocabulary through Anime
 
