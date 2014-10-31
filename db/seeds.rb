@@ -7,21 +7,31 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 
+CSV.foreach(File.join(Rails.root, 'db/japanese.csv')) do |row|
+  anime_id = row[0].to_i
+  japanese = row[1]
+  english = row[2]
+  Question.create( anime_id: anime_id, japanese: japanese, english: english)
+end
+
+
+
+
 animes = Anime.create([{name: 'FLCL Episode 1'}, {name: 'FLCL Episode 2'}])
-Questions_anime1 =Question.create([
-  {japanese:"konnichiwa", english: "hello", anime_id: 1},
-  {japanese:"Korosu", english: "kill", anime_id: 1}
+# Questions_anime1 =Question.create([
+#                                     {japanese:"konnichiwa", english: "hello", anime_id: 1},
+#                                     {japanese:"Korosu", english: "kill", anime_id: 1}
 
 
-  ])
+# ])
 
-Questions_anime_2 =Question.create([
-{japanese:"Chimatsuri", english: "blood bath", anime_id: 2},
-{japanese:"Genki Desuka?", english: "Are you well?", anime_id: 2}
+# Questions_anime_2 =Question.create([
+#                                      {japanese:"Chimatsuri", english: "blood bath", anime_id: 2},
+#                                      {japanese:"Genki Desuka?", english: "Are you well?", anime_id: 2}
 
 
 
-])
+# ])
 
 
 
