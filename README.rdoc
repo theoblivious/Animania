@@ -19,3 +19,12 @@ ERD Outline:
 
 https://www.draw.io/#LLearn%20Japanese%20through%20Anime%20
 
+Future Versions:
+
+1. Implement Tighter User Control
+2. Add a feature in Admin Panel to upload an excel doc of vocabulary via the web app
+3. Generate Vocabulary from specific Anime
+4. Implement Japanese Language Support
+5. Implement Scoring System
+
+
