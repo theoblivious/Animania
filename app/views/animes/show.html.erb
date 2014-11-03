@@ -14,7 +14,8 @@
 <tbody>
   <!-- List of questions for each anime and displayed on anime show page  -->
   <strong></strong>
-
+<!-- iterating through all the questions for this specific anime. In our show method
+we specified a .sample for all the questions  -->
   <% @anime.questions.each do |question| %>
         <tr>
           <td><%= question.id %></td>
@@ -33,4 +34,4 @@
 <div class="secondary large button ">
 <%= link_to 'Generate Quiz', quiz_japanese_path({id: @question.id}) %>
 </div>
-<!-- This is how we tell Rails that we want to pass this piece of information from the Animes controller to the quiz controller. -->
+<!-- This is how we tell Rails that we want to pass this piece of information from the Animes controller to the quiz controller.  The quiz_japanese path grabs the random question and then allows it to be sent to my japanese and english views on my quiz-->

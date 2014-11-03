@@ -8,6 +8,8 @@ class AnimesController < ApplicationController
   end
 
   def show
+    #we made the association with questions and anime in our models which makes this possible.
+    # in this case we dont care abotu showing a particular anime details, just the queestions within it.
     @question = @anime.questions.sample
     # respond_with(@anime)
   end

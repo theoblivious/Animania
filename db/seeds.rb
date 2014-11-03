@@ -18,9 +18,9 @@ end
 
 
 animes = Anime.create([{name: 'FLCL Episode 1'}, {name: 'FLCL Episode 2'}])
-# Questions_anime1 =Question.create([
-#                                     {japanese:"konnichiwa", english: "hello", anime_id: 1},
-#                                     {japanese:"Korosu", english: "kill", anime_id: 1}
+ Questions_anime1 =Question.create([
+                                     {japanese:"konnichiwa", english: "hello", anime_id: 1},
+                                     {japanese:"Korosu", english: "kill", anime_id: 1}
 
 
 # ])
