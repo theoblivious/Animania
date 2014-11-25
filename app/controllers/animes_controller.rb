@@ -4,7 +4,6 @@ class AnimesController < ApplicationController
   def index
     @animes = Anime.all
 
-    # respond_with(@animes)
   end
 
   def show
@@ -16,7 +15,7 @@ class AnimesController < ApplicationController
 
   def new
     @anime = Anime.new
-    # respond_with(@anime)
+
   end
 
   def edit
@@ -43,7 +42,7 @@ class AnimesController < ApplicationController
       else
         format.html { render :edit }
         format.json { render json: @anime.errors, status: :unprocessable_entity }
-        # respond_with(@anime)
+
       end
     end
   end
