@@ -17,10 +17,11 @@
       <tr>
         <td class="anime_name"><%= anime.name %></td>
 
-
+        <!-- this is misleading as we are having the animes route path be the anime show page which contains all of our questions  -->
         <td><%= link_to 'Show Questions ', anime %></td>
         <!-- <td><%= link_to 'Edit', edit_anime_path(anime) %></td> -->
         <!-- <td><%= link_to 'Destroy', anime, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <!-- We may add these back in when we get authentication to work properly -->
       </tr>
     <% end %>
     <% end %>
@@ -30,4 +31,6 @@
 <br>
 
 <!-- <div class="secondary small button"><%= link_to 'New Anime', new_anime_path %></div> -->
+<!-- we can add new anime later with authentication -->
+
 <div class="secondary small button"><%= link_to 'Back To Home Page', root_path %></div>
