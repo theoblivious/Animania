@@ -13,18 +13,7 @@ class QuestionsController < ApplicationController
 
   end
 
-  # case params[:lang]
-  # when "japanese"
-  #   render "show_japanese"
-  # when "english"
-  #   render "show_english"
-  # else
-  #   puts "error unsupported language"
-  # end
 
-
-
-  # respond_with(@question)
 
 
   def new
