@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = Question.all
-    # respond_with(@questions)
+
   end
 
   def show
@@ -11,25 +11,25 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     @anime = Anime.find(params[:anime_id])  # need to specify the @ instance so that it can be recognized in my views
 
-
-
-    # case params[:lang]
-    # when "japanese"
-    #   render "show_japanese"
-    # when "english"
-    #   render "show_english"
-    # else
-    #   puts "error unsupported language"
-    # end
-
-
-
-    # respond_with(@question)
   end
+
+  # case params[:lang]
+  # when "japanese"
+  #   render "show_japanese"
+  # when "english"
+  #   render "show_english"
+  # else
+  #   puts "error unsupported language"
+  # end
+
+
+
+  # respond_with(@question)
+
 
   def new
     @question = Question.new
-    # respond_with(@question)
+
   end
 
   def edit
@@ -38,17 +38,17 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     @question.save
-    # respond_with(@question)
+
   end
 
   def update
     @question.update(question_params)
-    # respond_with(@question)
+
   end
 
   def destroy
     @question.destroy
-    # respond_with(@question)
+
   end
 
   private

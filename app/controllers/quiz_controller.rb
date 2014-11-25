@@ -10,7 +10,7 @@ class QuizController < ApplicationController
   # GET /quiz/english
   def english
     @question = Question.find(params[:id])
-    @engrish = @question.english
+    @english = @question.english
     @anime = @question.anime
   end
 end
