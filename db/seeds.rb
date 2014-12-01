@@ -14,6 +14,6 @@ CSV.foreach(File.join(Rails.root, 'db/japanese.csv')) do |row|
   Question.create( anime_id: anime_id, japanese: japanese, english: english)
 end
 
-
+ animes = Anime.create([{name: 'FLCL Episode 1'}, {name: 'FLCL Episode 2'}])
 
 
