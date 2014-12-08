@@ -1,3 +1,4 @@
+
 Link to App on Heroku: http://animania.herokuapp.com/
 
 Project: Learn Japanese vocabulary through Anime
@@ -26,5 +27,6 @@ Future Versions:
 3. Generate Vocabulary from specific Anime
 4. Implement Japanese Language Support
 5. Implement Scoring System
+6. Use Backbone.js
 
 
